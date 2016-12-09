@@ -9,6 +9,6 @@ gulp.task('bundle-deps', function() {
     .require('react-select')
     .exclude('react') //peer dep of react-select
     .bundle()
-    .pipe(source('bundle.js')) //the output file name. hacky but is recommended way
+    .pipe(source('bundle.js'))
     .pipe(gulp.dest('out'));
 });
